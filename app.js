@@ -53,7 +53,7 @@ async function main() {
       const weatherData = await getWeather(lat, lon);
 
       console.log("-------------------------------------------------");
-      console.log(`Cidade: ${city}, ${state}`);
+      console.log(`Cidade: ${weatherData.name}, ${state}`);
       console.log(`Temperatura: ${weatherData.main.temp.toFixed(1)}°C`);
       console.log(
         `Sensação térmica: ${weatherData.main.feels_like.toFixed(1)}°C`
